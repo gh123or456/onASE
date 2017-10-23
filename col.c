@@ -1,0 +1,14 @@
+i,ans;
+main(ct)
+{
+    for(;i<10000;i+=2)
+    {
+        ct=i*3;
+        for(;ct-1;)
+        {
+            ct=ct%2?ct*3+1:ct/2;
+            if(i==ct&&++ans)break;
+        }
+    }
+    printf("%d",ans);
+}
